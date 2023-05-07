@@ -1,0 +1,4 @@
+aiogram~=2.25.1
+
+peewee~=3.15.3
+Telethon~=1.27.0
