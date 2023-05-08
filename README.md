@@ -8,6 +8,6 @@ It has two parts. Client and Bot. Bot has only admin panel, so that's availible 
 Client is user account. Client automatically joins to added channels and forwards some messages to recipients
 ### What to do next
 Run **main.py**
-Script's going to ask user account's password, then bot token or phone number(and pin-code). Don't give him bot token! Otherwise bot side will be performing the user side work. It isn't convenient, because bots have some restrictions. Next remains only to add data through your bot and get messages from user account.
+Script's going to ask user account's password, then bot token or phone number(and pin-code). Don't give him bot token! Otherwise user side will be performing user side work. It isn't convenient, because bots have some restrictions. Next remains only to add data through your bot and get messages from user account.
 
 There you go!
