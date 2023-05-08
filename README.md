@@ -1,5 +1,5 @@
 # KeyWord_Bot
-This bot tracks added keywords in added channels or groups, then it forwards messages with keywords to added recipients. Keywords by adding have transform to regex-patterns. And keywords, which have more than 1 word have a special separate, so if words are came across not a nearby in message, it's anyway compatible with pattern
+This bot tracks added keywords in added channels or groups, then it forwards messages with keywords to added recipients. Keywords by adding have transform to regex-patterns. And keywords, which have more than 1 word have a especial separate, so if words from the same keyword are came across not a nearby in message, it's anyway compatible with pattern
 
 ## How to use
 At first, just set your own values in **bot/config.py**
