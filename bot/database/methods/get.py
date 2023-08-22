@@ -11,10 +11,10 @@ def get_words():
 
 
 def get_channels():
-    words = Channels.filter()
+    channels = Channels.filter()
     list_channels: list = []
-    for word in words:
-        list_channels.append(word.channel)
+    for channel in channels:
+        list_channels.append(channel.channel)
 
     return list_channels
 
@@ -22,7 +22,7 @@ def get_channels():
 def get_recipients():
     users = Recipients.filter()
     list_users: list = []
-    for word in users:
-        list_users.append(word.user)
+    for user in users:
+        list_users.append(user.user)
 
     return list_users
