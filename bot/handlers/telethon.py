@@ -2,7 +2,7 @@ from telethon import TelegramClient
 
 import re, logging
 
-from bot.database.methods.get import get_words, get_senders
+from bot.database.methods.get import get_words
 from bot import client
 
 
