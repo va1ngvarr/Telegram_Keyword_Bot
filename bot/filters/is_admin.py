@@ -10,8 +10,8 @@ class IsAdmin(Filter):
     async def check(self, *args) -> bool:
         if type(args[0]) == Message:
             message: Message = args[0]
-            return str(message.from_user.id) in config.ADMIN_LIST
+            return str(message.from_user.username) in config.ADMIN_LIST
 
         elif type(args[0]) == CallbackQuery:
             callback: CallbackQuery = args[0]
-            return str(callback.from_user.id) in config.ADMIN_LIST
+            return str(callback.from_user.username) in config.ADMIN_LIST
