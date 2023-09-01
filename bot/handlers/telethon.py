@@ -2,7 +2,7 @@ from telethon import TelegramClient
 
 import re, logging
 
-from bot.database.methods.get import get_words
+from bot.database.methods.get import get_words, get_recipients
 from bot import client
 
 
@@ -19,7 +19,7 @@ async def new_channels_messages_regex_handler(event):
             for word in get_words():
                 match = re.search(rf"{word}", get_message)
                 if match:
-                    for link in get_senders():
+                    for link in get_recipients():
                         await client.forward_messages(link, event.message)
                         await client.send_message(
                             link,
